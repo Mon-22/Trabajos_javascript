@@ -17,3 +17,23 @@ Pista: Las constantes se declaran con la palabra reservada const y
 es buena práctica que sus nombres sean declarados siempre con letras mayúsculas. 
 Utiliza parseInt para convertir la entrada del usuario a un número entero.
 */
+
+const prompt = require('prompt-sync')();
+const EdadMaxima= 99
+const EdadMinima= 18
+
+let edad=parseInt(prompt(' Cual es tu edad '));
+
+if (edad<EdadMinima){
+
+    console.log('Eres muy joven ')
+
+} else  if (edad <= EdadMaxima){
+
+    console.log (' eres mayor de edad puedes ser responsable de tus desiciones')
+
+} else  {
+
+    console.log(' esperemos esto funcione')
+}
+
